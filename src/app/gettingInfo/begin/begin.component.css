@@ -1,0 +1,61 @@
+.main{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.card{
+    width: 40vw;
+    height: 80vh;
+    background-color: var(--card);
+    margin-top: 10vh;
+    border-radius: 30px;
+    text-align: center; 
+}
+
+.lbl {
+    position: absolute;
+    margin-top: 30vh;
+}
+
+.lbl button{
+    background-color: #1FDF64;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 20px;
+    border: none;
+}
+
+.card label{
+    color: var(--letters);
+    padding: 10vw;
+}
+
+.idt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.idt input{
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: var(--background);
+    width: 35vw;
+    height: 5vh;
+    padding: 1px;   
+    text-align: center;
+    margin-top: 10vh;
+}
+
+:root {
+    --background: black;
+    --card: #242424;
+    --letters: #eaeaea;
+}
+

@@ -4,7 +4,7 @@ import { BeginComponent } from './begin/begin.component';
 
 const ROTAS: Routes = [
     {
-        path: 'getting-started',
+        path: '',
         component: BeginComponent,
         children: []
     }
