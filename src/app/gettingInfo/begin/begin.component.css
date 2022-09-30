@@ -24,7 +24,8 @@
     height: 5vh;
     width: 12vw;
     border-radius: 20px;
-    border: none;
+    border: none;   
+    cursor: pointer;
 }
 
 .card label{
@@ -58,4 +59,3 @@
     --card: #242424;
     --letters: #eaeaea;
 }
-

@@ -3,9 +3,9 @@
     <div class="lbl">
       <label for="user">First things first, how should we call you?</label>
       <div class="idt">
-        <input type="text" id="user" />
+        <input #name type="text" id="user"/>
       </div>
-      <button >That's me!</button>
+      <button (click)="submitName(name.value)" class="ripple">That's me!</button>
     </div>
   </div>
 </div>

@@ -12,4 +12,8 @@ export class BeginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submitName(name: string): void {
+    console.log(name);
+  }
+
 }
