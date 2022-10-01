@@ -1,4 +1,4 @@
-export abstract class Base{
+export abstract class SongStatusBase{
     isPlaying = false;
 
     constructor() { }

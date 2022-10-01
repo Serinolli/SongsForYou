@@ -1,5 +1,6 @@
 <div class="main">
   <div class="card">
+    <div *ngIf="nome == ''">
     <div class="lbl">
       <label for="user">First things first, how should we call you?</label>
       <div class="idt">
@@ -7,5 +8,11 @@
       </div>
       <button (click)="submitName(name.value)" class="ripple">That's me!</button>
     </div>
+  </div>
+  <div *ngIf="nome != ''" class="lbl">
+  <label>Welcome, {{nome}}!</label><br>
+  <button (click)="onClickNotMe()">That's not me!</button>
+  <button (click)="onClickStart()">Let me in!</button>
+  </div>
   </div>
 </div>
