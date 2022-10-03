@@ -9,7 +9,8 @@
       <button (click)="submitName(name.value)" class="ripple">That's me!</button>
     </div>
   </div>
-  <div *ngIf="nome != ''" class="lbl">
+
+  <div *ngIf="nome != ''" class="center">
   <label>Welcome, {{nome}}!</label><br>
   <button (click)="onClickNotMe()">That's not me!</button>
   <button (click)="onClickStart()">Let me in!</button>

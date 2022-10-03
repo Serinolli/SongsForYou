@@ -19,13 +19,22 @@
     margin-top: 30vh;
 }
 
-.lbl button{
+button{
     background-color: #1FDF64;
     height: 5vh;
     width: 12vw;
     border-radius: 20px;
     border: none;   
     cursor: pointer;
+    color: black;
+}
+
+button:last-child{
+    margin-left: 10px;
+}
+
+.center button {
+    margin-top: 4vh;
 }
 
 .card label{
@@ -58,4 +67,8 @@
     --background: black;
     --card: #242424;
     --letters: #eaeaea;
+}
+
+.center {
+    margin-top: 40%;
 }

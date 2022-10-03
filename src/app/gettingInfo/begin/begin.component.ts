@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-begin',
@@ -9,14 +10,9 @@ export class BeginComponent implements OnInit {
 
   nome: string | null = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    // if(localStorage.getItem('name') != null)
-    // {
-    //   this.nome = localStorage.getItem('name');
-    // }
-    
   }
 
   submitName(p: string): void {
@@ -26,11 +22,10 @@ export class BeginComponent implements OnInit {
 
   onClickNotMe() : void { 
     this.nome = '';
-    // localStorage.removeItem('name');
   }
 
   onClickStart () : void {
-    console.log('App should start rn')
+    this.router.navigate(['preferences']);
   }
 
 }
