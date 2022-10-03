@@ -25,7 +25,7 @@ export class BeginComponent implements OnInit {
   }
 
   onClickStart () : void {
-    this.router.navigate(['preferences']);
+    this.router.navigate(['info/preferences']);
   }
 
 }
