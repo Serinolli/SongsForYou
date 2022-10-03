@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-preferences',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preferences.component.css']
 })
 export class PreferencesComponent implements OnInit {
+  @ViewChild('modal') modal!: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
+    // this.modal.toggle()
   }
 
 }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router'; 
-import { BeginComponent } from './gettingInfo/begin/begin.component'; 
+import { RouterModule } from '@angular/router'; 
 import { InfoComponent } from './gettingInfo/info.component';
 
 @NgModule({
@@ -13,6 +12,10 @@ import { InfoComponent } from './gettingInfo/info.component';
         import('./gettingInfo/info.module').then(
           (info) => info.InfoModule
         )
+      },
+      {
+        path: 'components',
+        loadChildren: () => import('./base/components/components.module').then(m => m.ComponentsModule),
       }
     ]
   )],
