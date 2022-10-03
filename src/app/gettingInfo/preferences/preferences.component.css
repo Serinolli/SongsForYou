@@ -1,0 +1,28 @@
+.modal app-modal .overlay{
+    opacity: 1.0;
+    pointer-events: none;
+}
+
+.modal app-modal h1{
+    color:black;
+    text-align: center;
+}
+
+.modal app-modal button{
+    background-color: #1FDF64;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 20px;
+    border: none;   
+    cursor: pointer;
+    padding:10px;
+    margin: 10px;
+}
+
+.modal app-modal button a{
+    color: black;
+}
+
+.modal app-modal .buttons-modal {
+    text-align: center;
+}

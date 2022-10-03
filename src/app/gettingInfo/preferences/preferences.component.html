@@ -1,1 +1,18 @@
 <p>preferences works!</p>
+<button (click)="modal.toggle()">Modal</button>
+
+<div class="modal">
+  <app-modal #modal>
+    <h1>
+      Would you like to connect your Spotify account?
+    </h1>
+    <div class="buttons-modal">
+      <button class="confirmar" (click)="modal.toggle()">
+        <a>No, start from scratch.</a>
+      </button>
+      <button class="confirmar" (click)="modal.toggle()">
+        <a>Yes, I do.</a>
+      </button>
+    </div>
+  </app-modal>
+</div>
