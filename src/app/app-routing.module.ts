@@ -7,6 +7,11 @@ import { InfoComponent } from './gettingInfo/info.component';
   imports: [RouterModule.forRoot(
     [
       {
+        path: '',
+        redirectTo: 'info', 
+        pathMatch: 'full'
+      },
+      {
         path: 'info',
         component: InfoComponent,
         loadChildren: () => 

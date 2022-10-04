@@ -18,7 +18,7 @@ export class PreferencesComponent implements AfterViewInit {
   }
 
   onClickConfirmar(): void {
-    this.router.navigate(['conexao/spotify'])
+    this.router.navigate(['conexao'])
     this.modal.toggle();
   }
 
